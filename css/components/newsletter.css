@@ -1,0 +1,118 @@
+.newsletter {
+	padding-top: 35px;
+}
+
+.newsletter-content {
+	background-image: url("../../img/newsletter-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 103px;
+	padding-top: 240px;
+	padding-bottom: 148px;
+	position: relative;
+}
+
+.newsletter__text {
+	max-width: 375px;
+	overflow: hidden;
+}
+
+.newsletter__title {
+	color: var(--white-color);
+	margin-bottom: 40px;
+	transform: translate(-100%, 0%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+
+.newsletter__title._active {
+	transform: translate(0, 0);
+	opacity: 1;
+}
+
+.newsletter__descr {
+	font-weight: 410;
+	font-size: 16px;
+	line-height: 21px;
+	color: var(--white-color);
+	transform: translate(0, 30%);
+	opacity: 0;
+	transition: all 0.8s ease 0.5s;
+}
+
+.newsletter__descr._active {
+	transform: translate(0, 0);
+	opacity: 1;
+}
+
+.newsletter-form {
+	position: absolute;
+	bottom: -60px;
+	right: 133px;
+	opacity: 0;
+	transition: all 1s ease 0.2s;
+}
+
+.newsletter-form._active {
+	transform: translate(0, 0);
+	opacity: 1;
+}
+
+.subscribe-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color:white;
+	width: 501px;
+	border-radius: 8px;
+	padding-top: 53px;
+	
+}
+
+.subscribe-form__field {
+	width: calc(100% - (72px * 2));
+	border: none;
+	border-bottom: 1px solid rgba(28, 46, 61, 0.3);
+	padding: 25px 0;
+	font-size: 11px;
+	line-height: 13px;
+	letter-spacing: 2px;
+	color: var(--dark-color);
+	text-transform: uppercase;
+}
+
+.subscribe-form__btn {
+	width: 100%;
+	color: var(--white-color);
+	background-color:var(--neptun-color);
+	border-radius: 0px 0px 8px 8px;
+	margin-top: 75px;
+	border: 3px solid var(--neptun-color);
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
+}
+
+.subscribe-form__btn:hover {
+	color: var(--neptun-color);
+}
+
+.subscribe-form__btn::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: -100%;
+	background-color: var(--white-color);
+	transition: 0.2s;
+	z-index: -1;
+}
+
+.subscribe-form__btn:hover::after {
+	top: 0%;
+	transition: 0.2s;
+}

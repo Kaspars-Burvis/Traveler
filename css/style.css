@@ -1,0 +1,14 @@
+@import "global.css";
+
+/* components imports */
+@import "components/header.css";
+@import "components/first.css";
+@import "components/become.css";
+@import "components/featured.css";
+@import "components/featuredVideo.css";
+@import "components/newsletter.css";
+@import "components/inspirations.css";
+@import "components/footer.css";
+
+
+@import "media.css";
